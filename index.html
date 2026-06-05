@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VortexFlare | Web & Bots Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader-content">
+            <h2 class="loader-text">VortexFlare</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <p class="loader-status"><span id="status-text">подгружаем стили...</span> <span id="progress-text">0%</span></p>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <div class="orb-drift drift-1"><div class="glow-orb orb-1"></div></div>
+    <div class="orb-drift drift-2"><div class="glow-orb orb-2"></div></div>
+    <div class="orb-drift drift-3"><div class="glow-orb orb-3"></div></div>
+
+    <aside class="sidebar">
+        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+    </aside>
+
+    <div class="main-wrapper">
+        <nav class="glass-nav">
+            <div class="logo">VortexFlare</div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-btn" aria-label="Сменить тему">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn-magnetic">Связаться</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1 class="hero-title">Привет, я <span class="gradient-text">VortexFlare</span></h1>
+            <p class="hero-subtitle">Создаю стильные лендинги и функциональных чат-ботов для Telegram и Discord. От лёгких ботов до продвинутых решений с админ-панелью — по выгодной цене.</p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn-primary">Смотреть тарифы</a>
+            </div>
+            <div class="scroll-indicator">
+                <p>Scroll</p>
+                <div class="mouse"><div class="wheel"></div></div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="section-header">
+                <p class="subtitle">О сервисе</p>
+                <h2>Что я предлагаю</h2>
+                <p>Комплексные решения для вашего бизнеса — от визитки в интернете до умных автоматизаций</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="glass-card service-card">
+                    <i class="fas fa-laptop-code card-icon"></i>
+                    <h3>Лендинги</h3>
+                    <p>Современные адаптивные лендинги с анимациями, оптимизацией и стильным дизайном. Каждый сайт уникален и создаётся под ваши задачи.</p>
+                </div>
+                <div class="glass-card service-card">
+                    <i class="fab fa-telegram card-icon"></i>
+                    <h3>Telegram-боты</h3>
+                    <p>Чат-боты любой сложности: от простых информационных до продвинутых с админ-панелью, интеграциями и аналитикой.</p>
+                </div>
+                <div class="glass-card service-card">
+                    <i class="fab fa-discord card-icon"></i>
+                    <h3>Discord-боты</h3>
+                    <p>Функциональные боты для ваших серверов: модерация, развлечения, кастомные команды и многое другое.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2 class="counter" data-target="50">0</h2><span>+</span>
+                    <p>Выполненных проектов</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="30">0</h2><span>+</span>
+                    <p>Довольных клиентов</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="12">0</h2>
+                    <p>Тарифных планов</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing section" id="pricing">
+            <div class="section-header">
+                <p class="subtitle">Тарифы</p>
+                <h2>Выберите свой тариф</h2>
+                <p>Прозрачные цены, никаких скрытых платежей. Выберите подходящий план или закажите индивидуальный.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="landing">Лендинги</button>
+                <button class="filter-btn" data-filter="tg">Telegram-боты</button>
+                <button class="filter-btn" data-filter="ds">Discord-боты</button>
+                <button class="filter-btn" data-filter="combo">Комбо</button>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="glass-card price-card mix-landing" data-category="landing">
+                    <h3>Start</h3>
+                    <div class="price">5 000 ₽</div>
+                    <p>Лендинг на заказ среднего уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-landing" data-category="landing">
+                    <h3>Start+</h3>
+                    <div class="price">6 500 ₽</div>
+                    <p>Лендинг на заказ высокого уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+
+                <div class="glass-card price-card mix-tg" data-category="tg">
+                    <h3>T-bot</h3>
+                    <div class="price">5 000 ₽</div>
+                    <p>Telegram чат-бот среднего уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-tg" data-category="tg">
+                    <h3>T-bot+</h3>
+                    <div class="price">8 000 ₽</div>
+                    <p>Telegram чат-бот профессионального уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+
+                <div class="glass-card price-card mix-ds" data-category="ds">
+                    <h3>D-bot</h3>
+                    <div class="price">5 500 ₽</div>
+                    <p>Discord-бот среднего уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-ds" data-category="ds">
+                    <h3>D-bot+</h3>
+                    <div class="price">8 500 ₽</div>
+                    <p>Discord-бот профессионального уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+
+                <div class="glass-card price-card mix-combo" data-category="combo">
+                    <h3>Basic</h3>
+                    <div class="price">7 500 ₽</div>
+                    <p>Лендинг среднего уровня<br>Простой Telegram-бот</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-combo" data-category="combo">
+                    <h3>Lite</h3>
+                    <div class="price">9 000 ₽</div>
+                    <p>Лендинг среднего уровня<br>Telegram-бот среднего уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card popular mix-combo" data-category="combo">
+                    <div class="badge">Рекомендуем!</div>
+                    <h3>Prime</h3>
+                    <div class="price gradient-text-price">10 000 ₽</div>
+                    <p>Лендинг высокого уровня<br>Продвинутый Telegram-бот</p>
+                    <a href="#" class="btn-primary">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-combo" data-category="combo">
+                    <h3>Prime+</h3>
+                    <div class="price">14 000 ₽</div>
+                    <p>Лендинг высокого уровня<br>Профессиональный Telegram-бот</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-combo" data-category="combo">
+                    <h3>All-In</h3>
+                    <div class="price">19 000 ₽</div>
+                    <p>Лендинг высокого уровня<br>Pro Telegram-бот<br>Discord-бот среднего уровня</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card mix-combo" data-category="combo">
+                    <h3>Master</h3>
+                    <div class="price">21 000 ₽</div>
+                    <p>Лендинг высокого уровня<br>Pro Telegram-бот<br>Pro Discord-бот</p>
+                    <a href="#" class="btn-outline">Заказать тариф</a>
+                </div>
+                <div class="glass-card price-card custom-card" data-category="combo landing tg ds">
+                    <h3>Custom</h3>
+                    <div class="price">Договорная</div>
+                    <p>Не устроил ни один из тарифов? Свяжитесь со мной, и мы обговорим индивидуальный вариант!</p>
+                    <a href="#" class="btn-primary">Заказать тариф</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section" id="contact">
+            <h2>Готовы начать проект?</h2>
+            <p>Свяжитесь со мной в Telegram, обсудим вашу задачу и подберём оптимальное решение.</p>
+            <a href="#" class="btn-primary btn-large"><i class="fab fa-telegram-plane"></i> Написать в Telegram</a>
+        </section>
+
+        <footer>
+            <p>Created by <span class="gradient-text">VortexFlare</span></p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
